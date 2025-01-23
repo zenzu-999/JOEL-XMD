@@ -13,7 +13,7 @@
       "value": ""
     },  
     
-    "MENU IMAGE": {
+    "ALIVE_IMG": {
       "description": "you can use this public mongodb url if you have your personal key So you can use him.",
       "required": true,
       "value": "https://files.catbox.moe/5a2euh.jpg"
