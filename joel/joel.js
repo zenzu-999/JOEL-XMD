@@ -6,38 +6,133 @@ const axios = require('axios')
 
 cmd({
     pattern: "menu",
-    react: "🛸",
+    react: "ᰔ",
     alias: ["panel","commands"],
     desc: "menu the bot",
     category: "main"
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let desc = `*╭┈───────────────•*
-*Hello *${pushname} Welcome*   
-*╰┈───────────────•*
-*╭┈───────────────•*
-*│  ◦* ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
-*│  ◦* ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-*│  ◦* ᴍᴏᴅᴇ : *[${config.MODE}]*
-*│  ◦* ᴘʀᴇғɪx : *[${config.PREFIX}]*
-*╰┈───────────────•*
-*◆─〈 ✦${config.BOT_NAME}✦ 〉─◆*
-*╭┈───────────────•*
-*├ 1* •  *OWNER *
-*├ 2* • *DOWNLOAD‎*
-*├ 3* • *GROUPS*
-*├ 4* • *INFO *
-*├ 5* • *RANDOM*
-*├ 6* • *CONVERT*
-*├ 7* • *AI*
-*├ 8* • *WALLPAPERS*
-*├ 9* • *OTHER*
-*╰┈───────────────•*
+let desc = `ʜᴇʟʟᴏ ${pushname} ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ
+┏❒ ᴊᴏᴇʟ ᴍᴅ ᴍᴇɴᴜ ❏
+┃ʀᴜɴᴛɪᴍᴇ :   ${runtime(process.uptime())}
+┃ʀᴀᴍ ᴜꜱᴀɢᴇ : 21/128 ɢʙ
+┃ᴍᴏᴅᴇ : ${config.MODE}
+┃ᴘʀᴇғɪx : ${config.PREFIX}
+┗❑
+┏❒ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅs❑
+┃ᴊᴏᴇʟ
+┃ᴜᴘᴅᴀᴛᴇᴄᴍs
+┃sᴇᴛᴛɪɴɢs
+┃ᴏᴡɴᴇʀ
+┃ʀᴇᴘᴏ
+┃sʏꜱᴛᴇᴍ
+╽ꜱᴛᴀᴛᴜꜱ
+┃ʙʟᴏᴄᴋ
+┃ᴜɴʙʟᴏᴄᴋ
+┃sʜᴜᴛᴅᴏᴡɴ
+┃ᴄʟᴇᴀʀᴄʜᴀᴛs
+┃sᴇᴛᴘᴘ
+┃ʙʀᴏᴀᴅᴄᴀsᴛ
+┃ᴊɪᴅ
+┃ɢᴊɪᴅ
+┃ʀᴇꜱᴛᴀʀᴛ
+┗❑
+┏❒ᴅᴏᴡɴʟᴏᴀᴅᴇʀ-ᴄᴍᴅ❑                
+┃ғʙ
+┃ɪɴꜱᴛᴀ
+┃ᴠɪᴅᴇᴏ
+┃ɢᴅʀɪᴠᴇ
+┃ᴛᴡɪᴛᴛᴇʀ
+┃ᴛᴛ
+┃ᴍᴇᴅɪᴀғɪʀᴇ
+┃sᴏɴɢ
+┃ᴘʟᴀʏ
+╽ᴠɪᴅᴇᴏ
+┃ᴠɪᴅᴇᴏ2
+┃ɪᴍɢ
+┃ᴀᴘᴋ
+┃ᴅᴀʀᴀᴍᴀ
+┃ᴘʟᴀʏ2
+┃ʙᴀɪsᴄᴏᴘᴇ
+┃ɢɪɴɪsɪsɪʟᴀ
+┗❒
+┏❒ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs❑
+┃ʀᴇᴍᴏᴠᴇ
+┃ᴅᴇʟᴇᴛᴇ
+╽ᴀᴅᴅ
+┃ᴋɪᴄᴋ
+┃ᴋɪᴄᴋᴀʟʟ
+┃sᴇᴛɢᴏᴏᴅʙʏᴇ
+┃sᴇᴛᴡᴇʟᴄᴏᴍᴇ
+┃ᴘʀᴏᴍᴏᴛᴇ
+╽ᴅᴇᴍᴏᴛᴇ
+╽ᴛᴀɢᴀʟʟ
+┃ɢᴇᴛᴘɪᴄ
+┃ɪɴᴠɪᴛᴇ
+┃ʀᴇᴠᴏᴋᴇ
+┃ᴊᴏɪɴʀᴇᴏ̨ᴜᴇsᴛs
+┃ᴀʟʟʀᴇᴏ̨
+┃ᴍᴜᴛᴇ
+┃ᴜɴᴍᴜᴛᴇ
+┃ʟᴏᴄᴋɢᴄ
+┃ᴜɴʟᴏᴄᴋɢᴄ
+┃ʟᴇᴀᴠᴇ
+┃ᴜᴘᴅᴀᴛᴇɢɴᴀᴍᴇ
+╽ᴜᴘᴅᴀᴛᴇɢᴅᴇsᴄ
+┃ᴊᴏɪɴ
+┃ʜɪᴅᴇᴛᴀɢ
+┃ɢɪɴғᴏ
+┃ᴅɪsᴀᴘᴘᴇᴀʀ ᴏɴ
+┃ᴅɪsᴀᴘᴘᴇᴀʀ ᴏғғ
+┃ᴅɪsᴀᴘᴘᴇᴀʀ 7ᴅ 24ʜ 90ᴅ
+┃sᴇɴᴅᴅᴍ
+┗❑
+┏❒ɪɴғᴏ ᴄᴏᴍᴍᴀɴᴅs❑
+┃sᴄʀɪᴘᴛ
+┃ʀᴇᴘᴏ
+┃ᴀʟɪᴠᴇ
+┃ʙᴏᴛɪɴꜰᴏ
+┃ꜱᴛᴀᴛᴜꜱ
+┃ꜱᴜᴘᴘᴏʀᴛ
+┃ᴘɪɴɢ
+┃ꜱʏꜱᴛᴇᴍ
+┃ᴊᴏᴇʟ
+┗❑
+┏❒ʀᴀɴᴅᴏᴍ-ᴄᴏᴍᴍᴀɴᴅs❑
+┃ᴋɪɴɢ
+┃ᴅᴏɢ
+┃ᴀɴɪᴍᴇ
+┃ᴀɴɪᴍᴇɢɪʀʟ
+┃ᴀɴɪᴍᴇɢɪʀʟ1
+┃ᴀɴɪᴍᴇɢɪʀʟ2
+┃ᴀɴɪᴍᴇɢɪʀʟ3
+┃ᴀɴɪᴍᴇɢɪʀʟ4
+┃ᴀɴɪᴍᴇɢɪʀʟ5
+┗❑
+┏❒ᴄᴏɴᴠᴇᴛᴏʀ ᴄᴏᴍᴍᴀᴅs❑
+┃sᴛɪᴄᴋᴇʀ*
+┃ᴛʀᴛ <ᴛᴇxᴛ>
+┃ᴛᴛs <ᴛᴇxᴛ>
+┗❒
 
-*Reply With Number You want*
-
-> *BUGATTI BY MARISEL*`;
+┏❒ᴀɪ ᴄᴏᴍᴍᴀɴᴅs❑
+┃ɢᴘᴛ <ᴛᴇxᴛ>
+┃ᴀɪ <ᴛᴇxᴛ>*
+┃ʙᴏᴛ <ᴛᴇxᴛ>
+┗❑
+┏❒ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅs❒
+┃ᴛʀᴛ
+┃ᴊᴏᴋᴇ
+┃ғᴀᴄᴛ
+┃ɢɪᴛʜᴜʙꜱᴛᴀʟᴋ
+┃ɢᴘᴀꜱꜱ
+┃ʜᴀᴄᴋ
+┃ǫᴜᴏᴛᴇ
+┃ꜱʀᴇᴘᴏ
+┃ᴅᴇꜰɪɴᴇ
+┗❑
+ *ᴍᴀᴅᴇ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ`;
 
 const vv = await conn.sendMessage(from, { 
   image: { url: config.ALIVE_IMG }, 
@@ -48,16 +143,16 @@ const vv = await conn.sendMessage(from, {
     forwardingScore: 999, // برای فوروارد شدن
     isForwarded: true, // پیام به صورت فوروارد شده نشان داده می‌شود
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363299029326322@newsletter', 
-      newsletterName: "Marisel", 
+      newsletterJid: '12036329902932622@newsletter', 
+      newsletterName: "ʟᴏʀᴅ ᴊᴏᴇʟ", 
       serverMessageId: 999
     },
     externalAdReply: { 
-      title: 'Bugatti', 
+      title: 'ʟᴏʀᴅ ᴊᴏᴇʟ', 
       body: `${pushname}`, 
       mediaType: 1, 
-      sourceUrl: "https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x", 
-      thumbnailUrl: "https://files.catbox.moe/qti3gn.jpg" ,
+      sourceUrl: "https://whatsapp.com/channel/0029Vak2PevK0IBh2pKJPp2K", 
+      thumbnailUrl: "https://files.catbox.moe/5a2euh.jpg" ,
       renderLargerThumbnail: true,
       showAdAttribution: true
     }
