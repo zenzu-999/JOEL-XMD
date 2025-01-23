@@ -2,7 +2,7 @@ const {cmd , commands} = require('../command')
 const fg = require('api-dylux')
 const yts = require('yt-search')
 cmd({
-    pattern: "play2",
+    pattern: "play",
     desc: "To download songs.",
     react: "🎵",
     category: "download",
@@ -17,22 +17,16 @@ const url = data.url
     
     
 let desc = `
- *BUGATTI MUSIC DOWNLOADING* 
-
-🎵 *MUSIC FOUND!* 
-
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
-
- *Enjoy!*
-
-> *Bugatti * 
-
-> *© Marisel* 
-`
+ ┏❐ ᴊᴏᴇʟ ᴍᴅ ʙᴏᴛ ❑
+ ┃*Title:* ${data.title} 
+ ┃*Duration:* ${data.timestamp} 
+ ┃*Views:* ${data.views} 
+ ┃*Uploaded On:* ${data.ago} 
+ ┃*Link:* ${data.url} 
+ ┗❑
+  1.ᴀɪᴅɪᴏ
+  2.ᴀᴜᴅɪᴏ ᴅᴏᴄ
+      *ᴍᴀᴅᴇ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ*`
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
@@ -43,7 +37,7 @@ let downloadUrl = down.dl_url
 
 //send audio message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*© Marisel*"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*ʟᴏʀᴅ ᴊᴏᴇʟ*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
@@ -70,20 +64,16 @@ const url = data.url
     
     
 let desc = `
-*BUGATTI VIDEO DOWNLOADING* 
-🎥 *VIDEO FOUND!* 
-➥ *Title:* ${data.title} 
-➥ *Duration:* ${data.timestamp} 
-➥ *Views:* ${data.views} 
-➥ *Uploaded On:* ${data.ago} 
-➥ *Link:* ${data.url} 
-
- *Enjoy*
-
-> *Bugatti* 
-
-> *© Marisel*
-`
+┏❐ᴊᴏᴇʟ ᴍᴅ ʙᴏᴛ❑
+┃*Title:* ${data.title} 
+┃*Duration:* ${data.timestamp} 
+┃*Views:* ${data.views} 
+┃*Uploaded On:* ${data.ago} 
+┃*Link:* ${data.url}
+┗❑
+1.ᴀᴜᴅɪᴏ 
+2.ᴀᴜᴅɪᴏ ᴅᴏᴄ
+     *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ*`
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
@@ -94,7 +84,7 @@ let downloadUrl = down.dl_url
 
 //send video message
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*© Marisel*"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*ʟᴏʀᴅ ᴊᴏᴇʟ*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
