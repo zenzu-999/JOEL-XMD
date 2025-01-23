@@ -1,7 +1,7 @@
 {
-  "name": "Bugatti",
-  "description": "Superb Bot By Marisel",
-  "logo": "https://i.imgur.com/B43yw9c.jpeg",
+  "name": "ᴊᴏᴇʟ xᴍᴅ ʙᴏᴛ",
+  "description": "ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ʙʏ ʟᴏʀ ᴊᴏᴇʟ",
+  "logo": "https://files.catbox.moe/5a2euh.jpg",
   "keywords": ["bot"],
   "success_url": "/",
 
@@ -13,16 +13,16 @@
       "value": ""
     },  
     
-    "ALIVE_IMG": {
+    "MENU IMAGE": {
       "description": "you can use this public mongodb url if you have your personal key So you can use him.",
       "required": true,
-      "value": "https://i.imgur.com/eX51M51.jpeg"
+      "value": "https://files.catbox.moe/5a2euh.jpg"
     },
 
     "ALIVE_MSG": {
       "description": "Alive Message is Here.",
       "required": true,
-      "value": "*Bugatti Is Always Active*"
+      "value": "*ᴀᴍ ᴀʟᴡᴀʏs ᴀʟɪᴠᴇ ᴍᴏᴛʜᴇʀғᴜᴄᴋᴇʀ*"
     }, 
 
     "AUTO_REACT_STATUS": {
