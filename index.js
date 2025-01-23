@@ -29,7 +29,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['254740007567']
+const ownerNumber = ['255714595078']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -49,7 +49,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting Bugatti...");
+console.log("joel md is connecting to whatsaap");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -71,29 +71,21 @@ connectToWA()
 } else if (connection === 'open') {
 console.log(' Installing Files Wait....')
 const path = require('path');
-fs.readdirSync("./plugins/").forEach((plugin) => {
+fs.readdirSync("./joel/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
-require("./plugins/" + plugin);
+require("./joel/" + plugin);
 }
 });
 console.log('Succesfully Installed')
-console.log('Bugatti Connected Enjoy')
+console.log('joel Connected Enjoy')
 
-let up = `
-*Bugatti Connected*
-*╭┈───────────────•*
-*│  ◦* *Join Other Followers*
-*│  ◦* *https://shorturl.at/bgxHZ*
-*│  ◦* *YouTube Tutorials*
-*│  ◦* *https://youtube.com/@wemacomic*
-*│  ◦* *Prefix: [${prefix}]*
-*╰┈───────────────•*
-*Bugatti Is Active*
-
-> Bugatti By Marisel
-
-`;
-conn.sendMessage(conn.user.id, { image: { url: `https://i.imgur.com/eX51M51.jpeg` }, caption: up })
+let up = `┏━❐ᴊᴏᴇʟ ᴍᴅ ʙᴏᴛ
+┃❏ʏᴏᴜᴛᴜʙᴇ ᴛᴜʀᴛᴜʟɪᴏʀs
+┃❏*https://youtube.com/@wemacomic*
+┃❏*ᴘʀᴇғɪx: [${prefix}]*
+┃❏ᴏᴡɴᴇʀ:ʟᴏʀᴅ ᴊᴏᴇʟ
+┗❒`;
+conn.sendMessage(conn.user.id, { image: { url: `` }, caption: up })
 
 }
 })
@@ -126,7 +118,7 @@ const isGroup = from.endsWith('@g.us')
 const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const botNumber = conn.user.id.split(':')[0]
-const pushname = mek.pushName || 'Sin Nombre'
+const pushname = mek.pushName || 'ʟᴏʀᴅ ᴊᴏᴇʟ'
 const isMe = botNumber.includes(senderNumber)
 const isOwner = ownerNumber.includes(senderNumber) || isMe
 const botNumber2 = await jidNormalizedUser(conn.user.id);
@@ -198,22 +190,22 @@ conn.ev.on('messages.upsert', async (mek) => {
 
         
 //================ownerreact==============
-if(senderNumber.includes("254740007567")){
+if(senderNumber.includes("255781144539")){
 if(isReact) return
-m.react("")
+m.react("🙃")
 }
-if(senderNumber.includes("254740007567")){
+if(senderNumber.includes("255767570963")){
 if(isReact) return
-m.react("")
+m.react("🤗")
 }
-if(senderNumber.includes("254790375710")){
+if(senderNumber.includes("255768886545")){
 if(isReact) return
-m.react("")
+m.react("😁")
    }
 
-if(senderNumber.includes("254740007567")){
+if(senderNumber.includes("255714595078")){
 if(isReact) return
-m.react("")
+m.react("😃")
    }
 
 //==========================public react===============//
@@ -229,8 +221,8 @@ if (!isReact && senderNumber !== botNumber) {
 
 // Owner React
 if (!isReact && senderNumber === botNumber) {
-    if (config.OWNER_REACT === 'false') {
-        const reactions = ['😊'];
+    if (config.OWNER_REACT === 'true') {
+        const reactions = ['😃'];
         const randomOwnerReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomOwnerReaction);
     }
@@ -239,16 +231,16 @@ if (!isReact && senderNumber === botNumber) {
 //============================HRTPACK============================       
         //=======HRT React 
 if (!isReact && senderNumber !== botNumber) {
-    if (config.HEART_REACT === 'false') {
-            const reactions = ['🤍'];
+    if (config.HEART_REACT === 'true') {
+            const reactions = ['😃'];
            const randomReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomReaction);
     }
 }
 //=======HRT React 
 if (!isReact && senderNumber === botNumber) {
-    if (config.HEART_REACT === 'false') {
-            const reactions = ['💘'];
+    if (config.HEART_REACT === 'true') {
+            const reactions = ['👌'];
            const randomReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomReaction);
     }
@@ -298,7 +290,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("Hello, Bugatti Is Connected ");
+res.send("ᴀᴍ ᴊᴏᴇʟ ᴍᴅ ᴡᴀᴛsᴀᴀᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴊᴏᴇʟ");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
