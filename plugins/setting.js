@@ -8,7 +8,7 @@ cmd({
 
     pattern: "settings",
 
-    react: "☣️",
+    react: "❊",
 
     alias: ["setting","env"],
 
@@ -25,26 +25,24 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 
 try{
-let madeSetting =`*╭────⚃* *SETTINGS* *⚃*
-*┊* *AUTO_READ_STATUS:* ➠ ${config.AUTO_READ_STATUS}
-*┊* *MODE:* ➠ ${config.MODE} 
-*┊* *AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
-*┊* *AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
-*┊* *AUTO_REPLY:* ➠ ${config.AUTO_REPLY} 
-*┊* *ALIVE_IMG:* ➠ ${config.ALIVE_IMG} 
-*┊* *ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
-*┊* *ANTI_LINK:* ➠ ${config.ANTI_LINK} 
-*┊* *ANTI_BAD:* ➠ ${config.ANTI_BAD} 
-*┊* *PREFIX:* ➠ ${config.PREFIX} 
-*┊* *FAKE_RECORDING:* ➠ ${config.FAKE_RECORDING} 
-*┊* *AUTO_REACT:* ➠ ${config.AUTO_REACT} 
-*┊* *HEART_REACT:* ➠ ${config.HEART_REACT} 
-*┊* *OWNER_REACT:* ➠ ${config.OWNER_REACT} 
-*┊* *BOT_NAME:* ➠ ${config.BOT_NAME}
-
-> By Marisel
-*╰═════════════⚃*
-`
+let madeSetting =`┏❐ ᴊᴏᴇʟ ᴍᴅ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ❑
+┃❏AUTO_READ_STATUS: ${config.AUTO_READ_STATUS}
+┃❏MODE: ${config.MODE} 
+┃❏AUTO_VOICE: ${config.AUTO_VOICE} 
+┃❏AUTO_STICKER: ${config.AUTO_STICKER} 
+┃❏AUTO_REPLY: ${config.AUTO_REPLY} 
+┃❏ALIVE_IMG: ${config.ALIVE_IMG} 
+┃❏ALIVE_MSG: ${config.ALIVE_MSG} 
+┃❏ANTI_LINK: ${config.ANTI_LINK} 
+┃❏ANTI_BAD: ${config.ANTI_BAD} 
+┃❏PREFIX: ${config.PREFIX} 
+┃❏FAKE_RECORDING: ${config.FAKE_RECORDING} 
+┃❏AUTO_REACT: ${config.AUTO_REACT} 
+┃❏HEART_REACT: ${config.HEART_REACT} 
+┃❏OWNER_REACT:  ${config.OWNER_REACT} 
+┃❏BOT_NAME:  ${config.BOT_NAME}
+┗❑
+ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ`
 
 
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeSetting},{quoted:mek})
