@@ -31,7 +31,6 @@ let madeSetting =`┏❐ ᴊᴏᴇʟ ᴍᴅ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ❑
 ┃❏AUTO_VOICE: ${config.AUTO_VOICE} 
 ┃❏AUTO_STICKER: ${config.AUTO_STICKER} 
 ┃❏AUTO_REPLY: ${config.AUTO_REPLY} 
-┃❏ALIVE_IMG: ${config.ALIVE_IMG} 
 ┃❏ALIVE_MSG: ${config.ALIVE_MSG} 
 ┃❏ANTI_LINK: ${config.ANTI_LINK} 
 ┃❏ANTI_BAD: ${config.ANTI_BAD} 
@@ -42,7 +41,7 @@ let madeSetting =`┏❐ ᴊᴏᴇʟ ᴍᴅ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ❑
 ┃❏OWNER_REACT:  ${config.OWNER_REACT} 
 ┃❏BOT_NAME:  ${config.BOT_NAME}
 ┗❑
- *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ`
+ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ*`
 
 
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeSetting},{quoted:mek})
