@@ -21,7 +21,7 @@ cmd({
     filename: __filename
 },
 async (conn, mek, m, { from, isOwner, args, reply }) => {
-    if (!isOwner) return reply("❌ You are not Marisel!");
+    if (!isOwner) return reply("You are not lord joel");
     if (args.length === 0) return reply("📢 Please provide a message to broadcast.");
     const message = args.join(' ');
     const groups = Object.keys(await conn.groupFetchAllParticipating());
@@ -32,7 +32,7 @@ async (conn, mek, m, { from, isOwner, args, reply }) => {
 });
 // 3. Set Profile Picture
 cmd({ pattern: "setpp", desc: "Set bot profile picture.", category: "owner", react: "😎", filename: __filename }, async (conn, mek, m, { from, isOwner, quoted, reply }) => {
-  if (!isOwner) return reply(" You are not Marisel");
+  if (!isOwner) return reply(" You are not lord joel");
   if (!quoted || !quoted.message.imageMessage) return reply(" Please reply to an image.");
   try {
     const media = await conn.downloadMediaMessage(quoted);
