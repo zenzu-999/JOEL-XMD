@@ -4,7 +4,7 @@ const os = require("os")
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 cmd({
-    pattern: "ping2",
+    pattern: "speed",
     react: "🤖",
     alias: ["speed"],
     desc: "Check bot\'s ping",
@@ -27,7 +27,7 @@ l(e)
 
 cmd({
     pattern: "ping",
-    react: "♻️",
+    react: "⚡",
     alias: ["speed"],
     desc: "Check bot\'s ping",
     category: "main",
@@ -40,7 +40,7 @@ const startTime = Date.now()
         const message = await conn.sendMessage(from, { text: '*_Pinging..._*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*Pong.. : ${ping}ms*`}, { quoted: message })
+        await conn.sendMessage(from, { text: `*Pong ${ping}ms*😀`}, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
