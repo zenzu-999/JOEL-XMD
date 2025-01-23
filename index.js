@@ -85,7 +85,7 @@ let up = `┏━❐ᴊᴏᴇʟ ᴍᴅ ʙᴏᴛ
 ┃❏*ᴘʀᴇғɪx: [${prefix}]*
 ┃❏ᴏᴡɴᴇʀ:ʟᴏʀᴅ ᴊᴏᴇʟ
 ┗❒`;
-conn.sendMessage(conn.user.id, { image: { url: `` }, caption: up })
+conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/5a2euh.jpg` }, caption: up })
 
 }
 })
