@@ -3,7 +3,7 @@ const { cmd } = require('../command');
 cmd({
     pattern: "owner",
     react: "👑", // Reaction emoji when the command is triggered
-    alias: ["marisel", "king"],
+    alias: ["ʟᴏʀᴅ", "ᴊᴏᴇʟ"],
     desc: "Get owner number",
     category: "main",
     filename: __filename
@@ -11,9 +11,9 @@ cmd({
 async (conn, mek, m, { from }) => {
     try {
         // Owner's contact info
-        const ownerNumber = '+254740007567'; // Replace this with the actual owner number
-        const ownerName = 'Marisel'; // Replace this with the owner's name
-        const organization = 'UD TEAM'; // Optional: replace with the owner's organization
+        const ownerNumber = '+255714595078'; // Replace this with the actual owner number
+        const ownerName = 'ʟᴏʀᴅ ᴊᴏᴇʟ'; // Replace this with the owner's name
+        const organization = 'ᴊᴏᴇʟ ᴛᴇᴀᴍ'; // Optional: replace with the owner's organization
 
         // Create a vCard (contact card) for the owner
         const vcard = 'BEGIN:VCARD\n' +
@@ -33,9 +33,9 @@ async (conn, mek, m, { from }) => {
 
         // Send a reply message that references the vCard
         await conn.sendMessage(from, {
-            text: `This is Marisel's contact: ${ownerName}`,
+            text: `ᴛʜɪs ɪs ᴍʏ ᴄᴜᴛᴇ ᴏᴡɴᴇʀ: ${ownerName}`,
             contextInfo: {
-                mentionedJid: [ownerNumber.replace('+254740007567', '') + '+254740007567@s.whatsapp.net'], // Mention the owner
+                mentionedJid: [ownerNumber.replace('+255714595078', '') + '+255714595078@s.whatsapp.net'], // Mention the owner
                 quotedMessageId: sentVCard.key.id // Reference the vCard message
             }
         }, { quoted: mek });
