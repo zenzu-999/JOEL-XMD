@@ -10,17 +10,18 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let repo =`
-*╭──────────────●●►*
-> *BOT OWNER:*
-*|* *Marisel*
-> *BUGATTI REPO:*
-*|* *https://github.com/betingrich/Bugatti*
-> *CHANNEL:*
-*|* *https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x*
-*╰──────────────●●►*
-> *Successfuly Updated*
-`
+let repo =`┏❒ʙᴏᴛ sᴄʀɪᴘᴛ
+┃ɴᴀᴍᴇ:ᴊᴏᴇʟ xᴍᴅ
+┃ᴏᴡɴᴇʀ:ᴊᴏᴇʟᴊᴀᴍᴇsᴛᴇᴄʜ
+┃ʀᴇᴘᴏ sᴛᴀᴛᴜs:ᴍᴀɴᴛᴀɪɴᴇᴅ
+┃ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs:ᴛᴡᴏ{2}
+┗❑
+┏❒sᴄʀɪᴘᴛ
+┃github.com/joeljamestech2/joel-xmd
+┗❑
+┏❐sᴜᴘᴘᴏʀᴛ
+┃https://joeljamestech.netlify.app/
+┗❑`
 await conn.sendMessage(from, { text: repo ,
   contextInfo: {
     mentionedJid: [ '' ],
@@ -28,16 +29,16 @@ await conn.sendMessage(from, { text: repo ,
     forwardingScore: 999,
     isForwarded: false,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363299029326322@newsletter',
-      newsletterName: "Marisel",
+      newsletterJid: '12036329902932🐱322@newsletter',
+      newsletterName: "ʟᴏʀᴅ ᴊᴏᴇʟ",
       serverMessageId: 999
     },
 externalAdReply: { 
-title: 'Marisel',
+title: 'ʟᴏʀᴅ ᴊᴏᴇʟ',
 body: `${pushname}`,
 mediaType: 1,
-sourceUrl: "https://github.com/betingrich/Bugatti" ,
-thumbnailUrl: "https://files.catbox.moe/qti3gn.jpg" ,
+sourceUrl: "https://github.com/joeljamestech2/JOEL-XMD" ,
+thumbnailUrl: "https://files.catbox.moe/5a2euh.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
