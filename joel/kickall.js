@@ -10,7 +10,7 @@ cmd({
 },           
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-      if (!isAdmins) return reply(`Only Marisel Can use this Command`)
+      if (!isAdmins) return reply(`Only joel Can use this Command`)
       if (!isOwner) return reply(`Sorry You're not Marisel`)
       
         // Check if the command is used in a group
