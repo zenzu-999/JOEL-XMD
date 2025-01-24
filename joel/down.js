@@ -10,7 +10,7 @@ let baseUrl;
 })();
 
 
-const yourName = "*BUGATTI TWEETS*";
+const yourName = "*JOEL TWEETS*";
 
 //twitter dl (x)
 cmd({
@@ -26,7 +26,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me twitter url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/twitterdl?url=${q}`)
-        reply("*BUGATTI TWITTER VIDEO DOWNLOADING...📥*")
+        reply("*JOEL TWITTER VIDEO DOWNLOADING*")
         //send video (hd,sd)
         await conn.sendMessage(from, { video: { url: data.data.data.HD }, mimetype: "video/mp4", caption: `- HD\n\n ${yourName}` }, { quoted: mek })
         await conn.sendMessage(from, { video: { url: data.data.data.SD }, mimetype: "video/mp4", caption: `- SD \n\n ${yourName}` }, { quoted: mek })  
@@ -34,7 +34,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         await conn.sendMessage(from, { audio: { url: data.data.data.audio }, mimetype: "audio/mpeg" }, { quoted: mek })  
     } catch (e) {
         console.log(e)
-        reply(`${e}`)
+        reply(`ᴄᴏɴᴛᴀᴄᴛ ʟᴏʀᴅ ᴊᴏᴇʟ`)
     }
 })
 
@@ -52,10 +52,10 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me gdrive url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/gdrivedl?url=${q}`)
-        reply("*BUGATTI GOOGLE DRIVE FILE DOWNLOADING...📥*")
+        reply("*JOEL GOOGLE DRIVE FILE DOWNLOADING*")
         await conn.sendMessage(from, { document: { url: data.data.download }, fileName: data.data.fileName, mimetype: data.data.mimeType, caption: `${data.data.fileName}\n\n${yourName}` }, { quoted: mek })                                                                                                                 
     } catch (e) {
         console.log(e)
-        reply(`${e}`)
+        reply(`ᴄᴏɴᴛᴀᴄᴛ ʟᴏʀᴅ ᴊᴏᴇʟ`)
     }
 })
