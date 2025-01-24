@@ -19,6 +19,6 @@ await sleep(1500)
 exec("pm2 restart all")
 }catch(e){
 console.log(e)
-reply(`${e}`)
+reply(`ᴊᴏᴇʟ ᴍᴅ ɪs ʀᴇsᴛᴀʀᴛɪɴɢ`)
 }
 })
