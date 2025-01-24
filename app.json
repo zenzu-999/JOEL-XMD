@@ -13,20 +13,61 @@
       "value": ""
     },  
     
-    "ALIVE_IMG": {
-      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+    "AUTO_READ_STATUS": {
+      "description": "make it true if you want joel md  bot to view status.",
       "required": true,
-      "value": "https://files.catbox.moe/5a2euh.jpg"
+      "value": "true"
     },
 
-    "ALIVE_MSG": {
-      "description": "Alive Message is Here.",
+    "MODE": {
+      "description": "make it public or private bot",
       "required": true,
-      "value": "*ᴀᴍ ᴀʟᴡᴀʏs ᴀʟɪᴠᴇ ᴍᴏᴛʜᴇʀғᴜᴄᴋᴇʀ*"
+      "value": "public"
+    }, 
+   
+      
+    "AUTO_VOICE": {
+      "description": "make it true to enable auto voice",
+      "required": true,
+      "value": "true"
+    }, 
+  
+        
+    "AUTO_STICKER": {
+      "description": "make it true to enable auto sticker or false to do not",
+      "required": true,
+      "value": "true"
+    }, 
+  
+     
+    "STATUS_REPLY": {
+      "description": "inter a message that will reply a status",
+      "required": true,
+      "value": ""
+    }, 
+
+      
+    "FAKE_RECORDING": {
+      "description": "make it true  to change your wapresence into recording...",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "PREFIX": {
+      "description": " set your bot prefix",
+      "required": true,
+      "value": "."
+    }, 
+
+    
+    "ANTI_LINK": {
+      "description": "make it true  to auto delete links in groups",
+      "required": true,
+      "value": "true"
     }, 
 
     "AUTO_REACT_STATUS": {
-      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+      "description": "you can use this public joel md url if you have your personal key So you can use him.",
       "required": true,
       "value": "true"
     }
