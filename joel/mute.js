@@ -15,13 +15,13 @@ if (!isOwner || !isAdmins) return;
 
 
 if (!m.isGroup) return reply(mg.onlygroup);
-if (!isBotAdmins) return reply(mg.needbotadmins);     
+if (!isBotAdmins) return reply(mg.needbotadmins);
             await conn.groupSettingUpdate(m.chat, "announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*Group Muted By Bugatti* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*Group Muted By joel* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*Bugatti Must be Admin*')    
+reply('*joel md  Must be Admin*')    
 } 
 })
 
@@ -42,11 +42,11 @@ if (!isOwner || !isAdmins) return;
 if (!m.isGroup) return reply(mg.onlygroup);
 if (!isBotAdmins) return reply(mg.needbotadmins);     
             await conn.groupSettingUpdate(m.chat, "not_announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*Group Closed By Bugatti* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*Group Closed By joel md* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*Bugatti Must be Admin*')    
+reply('ᴊᴏᴇʟ ᴍᴅ ᴍᴜsᴛ ʙᴇ ᴀᴅᴍɪɴ')    
 } 
 })
 
