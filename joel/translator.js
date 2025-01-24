@@ -22,12 +22,12 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const translation = response.data.responseData.translatedText;
 
-        const translationMessage = `
-🌍 *BUGATTI TRANSLATION* 🌍
-🔤 *Original*: ${textToTranslate}
-🔠 *Translated*: ${translation}
-🌐 *Language*: ${targetLang.toUpperCase()}
-*Bugatti Translator*`;
+        const translationMessage = `┏❐ ᴊᴏᴇʟ ᴍᴅ ᴛʀᴀɴsʟᴀᴛᴏʀ
+┃*Original*: ${textToTranslate}
+┃ *Translated*: ${translation}
+┃ *Language*: ${targetLang.toUpperCase()}
+┗╸❑
+    *ᴍᴀᴅᴇ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ`;
 
         return reply(translationMessage);
     } catch (e) {
