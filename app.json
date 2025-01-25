@@ -28,8 +28,8 @@
       
     "AUTO_VOICE": {
       "description": "make it true to enable auto voice",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     }, 
   
         
@@ -42,15 +42,15 @@
      
     "STATUS_REPLY": {
       "description": "inter a message that will reply a status",
-      "required": true,
+      "required": false,
       "value": ""
     }, 
 
       
     "FAKE_RECORDING": {
       "description": "make it true  to change your wapresence into recording...",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     }, 
 
     "PREFIX": {
