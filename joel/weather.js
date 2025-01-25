@@ -16,21 +16,19 @@ async (conn, mek, m, { from, q, reply }) => {
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         const response = await axios.get(url);
         const data = response.data;
-        const weather = `
-        *BUGATTI WEATHER UPDATES*
-🌍 *Weather Information for ${data.name}, ${data.sys.country}* 🌍
-🌡️ *Temperature*: ${data.main.temp}°C
-🌡️ *Feels Like*: ${data.main.feels_like}°C
-🌡️ *Min Temp*: ${data.main.temp_min}°C
-🌡️ *Max Temp*: ${data.main.temp_max}°C
-💧 *Humidity*: ${data.main.humidity}%
-☁️ *Weather*: ${data.weather[0].main}
-🌫️ *Description*: ${data.weather[0].description}
-💨 *Wind Speed*: ${data.wind.speed} m/s
-🔽 *Pressure*: ${data.main.pressure} hPa
-
-> *Marisel Made This*
-`;
+        const weather = `┏❒ᴊᴏᴇʟ ᴍᴅ ᴜᴘᴅᴀᴛᴇs
+┃🌍 *Weather Information for ${data.name}, ${data.sys.country}* 🌍
+┃🌡️ *Temperature*: ${data.main.temp}°C
+┃🌡️ *Feels Like*: ${data.main.feels_like}°C
+┃🌡️ *Min Temp*: ${data.main.temp_min}°C
+┃🌡️ *Max Temp*: ${data.main.temp_max}°C
+┃💧 *Humidity*: ${data.main.humidity}%
+┃☁️ *Weather*: ${data.weather[0].main}
+┃🌫️ *Description*: ${data.weather[0].description}
+┃💨 *Wind Speed*: ${data.wind.speed} m/s
+┃🔽 *Pressure*: ${data.main.pressure} hPa
+┗❑
+  ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴏᴇʟ ᴋᴀɴɢ'ᴏᴍᴀ`;
         return reply(weather);
     } catch (e) {
         console.log(e);
