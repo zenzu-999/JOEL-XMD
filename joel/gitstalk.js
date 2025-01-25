@@ -20,19 +20,17 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        let userInfo = `     *BUGATTI GITSTALK*
-        
-👤 *ᴜꜱᴇʀ ɴᴀᴍᴇ*: ${data.name || data.login}
-🔗 *ɢɪᴛʜᴜʙ ᴜʀʟ*:(${data.html_url})
-📝 *ʙɪᴏ*: ${data.bio || 'Not available'}
-🏙️ *ʟᴏᴄᴀᴛɪᴏɴ*: ${data.location || 'Unknown'}
-📊 *ᴘᴜʙʟɪᴄ ʀᴇᴘᴏ*: ${data.public_repos}
-👥 *ꜰᴏʟʟᴏᴡᴇʀꜱ*: ${data.followers} | Following: ${data.following}
-📅 *ᴄʀᴇᴀᴛʀᴅ ᴅᴀᴛᴇ*: ${new Date(data.created_at).toDateString()}
-🔭 *ᴘᴜʙʟɪᴄ ɢɪꜱᴛꜱ*: ${data.public_gists}
-
-> *Marisel*
-`;
+        let userInfo = `┏❑ ᴊᴏᴇʟ ᴍᴅ ɢɪᴛsᴛᴀʟᴋ      
+┃👤 *ᴜꜱᴇʀ ɴᴀᴍᴇ*: ${data.name || data.login}
+┃🔗 *ɢɪᴛʜᴜʙ ᴜʀʟ*:(${data.html_url})
+┃📝 *ʙɪᴏ*: ${data.bio || 'Not available'}
+┃🏙️ *ʟᴏᴄᴀᴛɪᴏɴ*: ${data.location || 'Unknown'}
+┃📊 *ᴘᴜʙʟɪᴄ ʀᴇᴘᴏ*: ${data.public_repos}
+┃👥 *ꜰᴏʟʟᴏᴡᴇʀꜱ*: ${data.followers} | Following: ${data.following}
+┃📅 *ᴄʀᴇᴀᴛʀᴅ ᴅᴀᴛᴇ*: ${new Date(data.created_at).toDateString()}
+┃🔭 *ᴘᴜʙʟɪᴄ ɢɪꜱᴛꜱ*: ${data.public_gists}
+┗❑
+  *ᴘᴏᴡᴇʀᴇᴅ ʙᴜ ʟᴏʀᴅ ᴊᴏᴇʟ*`;
 
         await conn.sendMessage(from, { image: { url: data.avatar_url }, caption: userInfo }, { quoted: mek });
     } catch (e) {
