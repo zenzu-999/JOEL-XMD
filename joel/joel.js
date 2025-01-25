@@ -343,13 +343,11 @@ await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner7 }
 *┋* *.ǫᴜᴏᴛᴇ*
 *┋* *.ꜱʀᴇᴘᴏ*
 *┋* *.ᴅᴇꜰɪɴᴇ*
-*╰┈───────────────•*
-
-> *BUGATTI BY MARISEL*`;
+*╰┈───────────────•*`;
 await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner8 }, { quoted: mek });                     
                         break;
                     default:
-                        reply("*ʀᴇᴘᴏʀᴛ ᴀɴʏ ᴇʀʀᴏʀ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ /n/n ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ /n/n +25571595078");
+                        reply("*ʀᴇᴘᴏʀᴛ ᴀɴʏ ᴇʀʀᴏʀ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ wa.me 255714595078*");
                 }
 
             }
