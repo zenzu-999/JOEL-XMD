@@ -1,47 +1,60 @@
-const { cmd } = require('../command');
 
+const config = require('../config')
+const {cmd , commands} = require('../command')
 cmd({
     pattern: "owner",
-    react: "👑", // Reaction emoji when the command is triggered
-    alias: ["ʟᴏʀᴅ", "ᴊᴏᴇʟ"],
-    desc: "Get owner number",
+    react: "👦",
+    desc: "get cmd list",
     category: "main",
     filename: __filename
-}, 
-async (conn, mek, m, { from }) => {
-    try {
-        // Owner's contact info
-        const ownerNumber = '+255714595078'; // Replace this with the actual owner number
-        const ownerName = 'ʟᴏʀᴅ ᴊᴏᴇʟ'; // Replace this with the owner's name
-        const organization = 'ᴊᴏᴇʟ ᴛᴇᴀᴍ'; // Optional: replace with the owner's organization
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+let menu = {
+main: '',
+download: '',
+group: '',
+owner: '',
+convert: '',
+search: ''
+};
 
-        // Create a vCard (contact card) for the owner
-        const vcard = 'BEGIN:VCARD\n' +
-                      'VERSION:3.0\n' +
-                      `FN:${ownerName}\n` +  // Full Name
-                      `ORG:${organization};\n` +  // Organization (Optional)
-                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` +  // WhatsApp ID and number
-                      'END:VCARD';
+for (let i = 0; i < commands.length; i++) {
+if (commands[i].pattern && !commands[i].dontAddCommandList) {
+menu[commands[i].category] += `*┋* ${commands[i].pattern}\n`;
+ }
+}
 
-        // Send the vCard first
-        const sentVCard = await conn.sendMessage(from, {
-            contacts: {
-                displayName: ownerName,
-                contacts: [{ vcard }]
-            }
-        });
+let madeMenu = `❏━━━━━━━━━━━━━━━━━━━❐
+❒⁠ᴊᴏᴇʟ ᴍᴅ sᴜᴘᴘᴏʀᴛ❑
+*https://joeljamestech.netlify.app*
 
-        // Send a reply message that references the vCard
-        await conn.sendMessage(from, {
-            text: `ᴛʜɪs ɪs ᴍʏ ᴄᴜᴛᴇ ᴏᴡɴᴇʀ: ${ownerName}`,
-            contextInfo: {
-                mentionedJid: [ownerNumber.replace('+255714595078', '') + '+255714595078@s.whatsapp.net'], // Mention the owner
-                quotedMessageId: sentVCard.key.id // Reference the vCard message
-            }
-        }, { quoted: mek });
+❒ᴡᴀ ᴄʜᴀɴɴᴇʟ❑
+*https://whatsapp.com/channel/0029Vak2PevK0IBh2pKJPp2K*
 
-    } catch (error) {
-        console.error(error);
-        await conn.sendMessage(from, { text: 'Sorry, there was an error fetching the owner contact.' }, { quoted: mek });
-    }
-});
+❐ʏᴏᴜ-ᴛᴜʙᴇ❏
+*https://youtube.com/@joeljamestech255*
+
+❐ᴛɪᴋ ᴛᴏᴋ❏
+*https://tiktom.com/@joeljamestech*
+
+❏ɢɪᴛ ʜᴜʙ❐
+*github.com/joeljamestech2*
+
+❏ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀs❐
+ʟᴏʀᴅ ᴊᴏᴇʟ 
+wa.me 255714595078
+wa.me 255767570963
+wa.me 255781144539
+αм 17 уєяαѕ σℓ∂ αм ωα¢нιηg 
+αηιмє тσ ƒєєℓ вєттєя
+⁠⁠⁠❏━━━━━━━━━━━━━━━━━━━❐
+*ᴋᴇᴇᴘ ᴜsɪɴɢ ᴊᴏᴇʟ ᴍᴅ ʙᴏᴛ*`
+
+await conn.sendMessage(from,{image:{url:config.OWNER_IMG},caption:madeMenu},{quoted:mek})
+
+}catch(e){
+console.log(e)
+reply(`ᴛʜᴏsᴇ ᴀʀᴇ ᴍʏ ᴏᴡɴᴇʀ ɪɴғᴏ`)
+}
+})
