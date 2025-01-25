@@ -42,7 +42,7 @@ src="https://cardivo.vercel.app/api?name=JOEL%20MD%20V5&description=🥂THE%20WO
 
 
 
-<a href='https://lively-starship-7378eb.netlify.app' target="_blank"><img alt='joel' src='https://img.shields.io/badge/PAIR CODE-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a></p>
+<a href='https://session-site-navy.vercel.app' target="_blank"><img alt='joel' src='https://img.shields.io/badge/PAIR CODE-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a></p>
 
 
  
