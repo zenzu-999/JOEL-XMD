@@ -15,7 +15,7 @@ async (conn, mek, m, { from, q, reply }) => {
         const fact = response.data.text;
 
         const funFact = `
- *BUGATTI RANDOM FACT* 
+ *JOEL MD RANDOM FACT* 
 
 ${fact}
 
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const joke = response.data;
         const jokeMessage = `
-😂 *Here's a random joke for you!* 😂
+😂 *Here's a random joke for you! by joel tech* 😂
 *${joke.setup}*
 ${joke.punchline} 😄
 > *Marisel*
