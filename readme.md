@@ -57,7 +57,7 @@ src="https://cardivo.vercel.app/api?name=JOEL%20MD%20V5&description=🥂THE%20WO
 
  
 
-<a href='https://effulgent-basbousa-1bfe4a.netlify.app/' target="_blank"><img alt='joel' src='https://img.shields.io/badge/HEROKU-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a></p>
+<a href='https://deploy-your-own-bot.netlify.app' target="_blank"><img alt='joel' src='https://img.shields.io/badge/HEROKU-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a></p>
 
 
 
@@ -258,4 +258,4 @@ jobs:
 
 
 
-*ɴᴏᴛᴇ* :*ᴊᴏᴇʟ xᴍᴅ ɪs sᴀғᴇ ᴏɴ ʜᴇʀᴏᴋᴜ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ*
+*ɴᴏᴛᴇ : ᴊᴏᴇʟ xᴍᴅ ɪs sᴀғᴇ ᴏɴ ʜᴇʀᴏᴋᴜ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ*
