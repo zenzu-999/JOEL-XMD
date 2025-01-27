@@ -6,11 +6,11 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "enter your session",
-AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || " ",
-MODE: process.env.MODE || "",
-AUTO_VOICE: process.env.AUTO_VOICE || "",
-AUTO_STICKER: process.env.AUTO_STICKER || "",
-AUTO_REPLY: process.env.AUTO_REPLY || "",
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+MODE: process.env.MODE || "public",
+AUTO_VOICE: process.env.AUTO_VOICE || "true",
+AUTO_STICKER: process.env.AUTO_STICKER || "true",
+AUTO_REPLY: process.env.AUTO_REPLY || "true",
 OWNER_IMG: process.env.OWNER_IMG || "https://files.catbox.moe/5a2euh.jpg",
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/sgld88.jpg",
 ALIVE_MSG: process.env.ALIVE_MSG || "*ᴀᴍ ᴀʟɪᴠᴇ ᴍᴏᴛʜᴇʀғᴜᴄᴋᴇʀ*",
