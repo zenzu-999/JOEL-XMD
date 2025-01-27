@@ -15,7 +15,7 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 var inital = new Date().getTime();
-let ping = await conn.sendMessage(from , { text: '*_Zinda huu..._*'  }, { quoted: mek } )
+let ping = await conn.sendMessage(from , { text: '*ℓσя∂ ʝσєℓ*'  }, { quoted: mek } )
 var final = new Date().getTime();
 await conn.sendMessage(from, { delete: ping.key })
 return await conn.sendMessage(from , { text: '*Pong*\n *' + (final - inital) + ' ms* '  }, { quoted: mek } )
@@ -37,10 +37,10 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '*_Pinging..._*' })
+        const message = await conn.sendMessage(from, { text: 'αм ʝσєℓ м∂ ву ℓσя∂ ʝσєℓ' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*Pong ${ping}ms*😀`}, { quoted: message })
+        await conn.sendMessage(from, { text: `ρσηg 0.${ping}ms`}, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
