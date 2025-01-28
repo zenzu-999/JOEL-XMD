@@ -68,8 +68,8 @@
 
     "AUTO_REACT_STATUS": {
       "description": "you can use this public joel md url if you have your personal key So you can use him.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     }
     
 
